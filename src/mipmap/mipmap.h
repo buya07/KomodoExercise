@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Efficiently generate mipmaps for use by opengl
  * Author:   Sean D'Epagnier
  *

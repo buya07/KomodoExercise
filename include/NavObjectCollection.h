@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  *
  ***************************************************************************
  *   Copyright (C) 2010 by David S. Register                               *
@@ -98,7 +98,7 @@ public:
     bool SaveFile( const wxString filename );
 
     void SetRootGPXNode(void);
-    bool IsOpenCPN();
+    bool OpenCPN();
     
     pugi::xml_node      m_gpx_root;
 };

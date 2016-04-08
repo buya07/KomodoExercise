@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Read and write KML Format (http://en.wikipedia.org/wiki/Keyhole_Markup_Language)
  * Author:   Jesper Weissglas
  *
@@ -442,7 +442,7 @@ wxString Kml::MakeKmlFromRoute( Route* route, bool insertSeq ) {
     insertQtVlmExtendedData = insertSeq;
     seqCounter = 0;
     TiXmlDocument xmlDoc;
-    wxString name = _("OpenCPN Route");
+    wxString name = _("Komodo Exercise 2016 Route");
     if( route->m_RouteNameString.Length() ) name = route->m_RouteNameString;
     TiXmlElement* document = StandardHead( xmlDoc, name );
 
@@ -489,7 +489,7 @@ wxString Kml::MakeKmlFromRoute( Route* route, bool insertSeq ) {
 
 wxString Kml::MakeKmlFromTrack( Track* track ) {
     TiXmlDocument xmlDoc;
-    wxString name = _("OpenCPN Track");
+    wxString name = _("Komodo Exercise 2016 Track");
     if( track->m_RouteNameString.Length() ) name = track->m_RouteNameString;
     TiXmlElement* document = StandardHead( xmlDoc, name );
 
@@ -546,7 +546,7 @@ wxString Kml::MakeKmlFromTrack( Track* track ) {
 
 wxString Kml::MakeKmlFromWaypoint( RoutePoint* routepoint ) {
     TiXmlDocument xmlDoc;
-    wxString name = _("OpenCPN Waypoint");
+    wxString name = _("Komodo Exercise 2016 Waypoint");
     if( routepoint->GetName().Length() ) name = routepoint->GetName();
     TiXmlElement* document = StandardHead( xmlDoc, name );
 

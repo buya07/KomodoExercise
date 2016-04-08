@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Georef utility
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Georef utility
  * Author:   David Register
  *
  ***************************************************************************

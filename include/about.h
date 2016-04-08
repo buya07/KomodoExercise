@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  About Dialog
  * Author:   David Register
  *
@@ -36,7 +36,7 @@
 
 #define ID_DIALOG 10001
 
-#define SYMBOL_ABOUT_TITLE _("About OpenCPN")
+#define SYMBOL_ABOUT_TITLE _("About Komodo Exercise 2016")
 
 #define xID_OK          10009
 #define ID_DONATE       10010

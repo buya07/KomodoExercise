@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  *
  ***************************************************************************
  *   Copyright (C) 2010 by David S. Register                               *
@@ -49,7 +49,7 @@ public:
     
     virtual bool Create( wxWindow *parent,
                  wxWindowID id = wxID_ANY,
-                 const wxString& caption = _("OpenCPN Alert"),
+                 const wxString& caption = _("Komodo Exercise 2016 Alert"),
                  const wxPoint& pos = wxDefaultPosition,
                  const wxSize& size = wxDefaultSize,
                  long style = wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU );
@@ -73,7 +73,7 @@ class AISTargetAlertDialog: public OCPN_AlertDialog
            bool Create( int target_mmsi, wxWindow *parent, AIS_Decoder *pdecoder,
                                 bool b_jumpto, bool b_createWP, bool b_ack,
                                 wxWindowID id = wxID_ANY,
-                                const wxString& caption = _("OpenCPN AIS Alert"),
+                                const wxString& caption = _("Komodo Exercise 2016 AIS Alert"),
                                 const wxPoint& pos = wxDefaultPosition,
                                 const wxSize& size = wxDefaultSize,
                                 long style = wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU );

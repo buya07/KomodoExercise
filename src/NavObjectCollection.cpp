@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  *
  ***************************************************************************
  *   Copyright (C) 2010 by David S. Register                               *
@@ -141,7 +141,7 @@ RoutePoint * GPXLoadWaypoint1( pugi::xml_node &wpt_node,
             linklist->Append( link );
         }
 
-    //    OpenCPN Extensions....
+    //    Komodo Exercise 2016 Extensions....
         else
         if( !strcmp( pcn, "extensions") ) {
             for( pugi::xml_node ext_child = child.first_child(); ext_child; ext_child = ext_child.next_sibling() ) {
@@ -1333,7 +1333,7 @@ void NavObjectCollection1::SetRootGPXNode(void)
     if(!strlen(m_gpx_root.name())) {
         m_gpx_root = append_child("gpx");
         m_gpx_root.append_attribute ( "version" ) = "1.1";
-        m_gpx_root.append_attribute ( "creator" ) = "OpenCPN";
+        m_gpx_root.append_attribute ( "creator" ) = "Komodo Exercise 2016";
         m_gpx_root.append_attribute( "xmlns:xsi" ) = "http://www.w3.org/2001/XMLSchema-instance";
         m_gpx_root.append_attribute( "xmlns" ) = "http://www.topografix.com/GPX/1/1";
         m_gpx_root.append_attribute( "xmlns:gpxx" ) =  "http://www.garmin.com/xmlschemas/GpxExtensions/v3";
@@ -1342,10 +1342,10 @@ void NavObjectCollection1::SetRootGPXNode(void)
     }
 }
         
-bool NavObjectCollection1::IsOpenCPN()
+bool NavObjectCollection1::OpenCPN()
 {
     for (pugi::xml_attribute attr = root().first_child().first_attribute(); attr; attr = attr.next_attribute())
-    if( !strcmp(attr.name(), "creator") && !strcmp(attr.value(), "OpenCPN") )
+    if( !strcmp(attr.name(), "creator") && !strcmp(attr.value(), "Komodo Exercise 2016") )
         return true;
     return false;
 }

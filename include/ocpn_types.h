@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN private types and ENUMs
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 private types and ENUMs
  * Author:   David Register
  *
  ***************************************************************************

@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Authors:  David Register
  *           Sean D'Epagnier
  *
@@ -528,7 +528,7 @@ void BuildCompressedCache()
     msg0 = _T("Very longgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg top line ");
 #endif    
     for(int i=0 ; i < thread_count ; i++){msg0 += _T("line\n\n");}
-    pprog = new wxProgressDialog(_("OpenCPN Compressed Cache Update"), msg0, count+1, GetOCPNCanvasWindow(), style );
+    pprog = new wxProgressDialog(_("Komodo Exercise 2016 Compressed Cache Update"), msg0, count+1, GetOCPNCanvasWindow(), style );
     
     wxSize csz = GetOCPNCanvasWindow()->GetClientSize();
     if(csz.x < 600 || csz.y < 600){

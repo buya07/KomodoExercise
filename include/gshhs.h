@@ -1,8 +1,8 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  GSHHS Chart Object (Global Self-consistent, Hierarchical, High-resolution Shoreline)
- * Author:   Jesper Weissglas for the OpenCPN port.
+ * Author:   Jesper Weissglas for the Komodo Exercise 2016 port.
  *
  *           Derived from http://www.zygrib.org/ and http://sourceforge.net/projects/qtvlm/
  *           which has the original copyright:

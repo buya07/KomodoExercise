@@ -31,7 +31,7 @@
  * Initial import as opencpn, GNU Automake compliant.
  *
  * Revision 1.1.1.1  2006/04/19 03:23:29  dsr
- * Rename/Import to OpenCPN
+ * Rename/Import to Komodo Exercise 2016
  *
  * Revision 1.29  2003/05/28 19:16:42  warmerda
  * fixed up argument names and stuff for docs

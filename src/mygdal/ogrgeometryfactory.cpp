@@ -34,7 +34,7 @@
  * Initial import as opencpn, GNU Automake compliant.
  *
  * Revision 1.1.1.1  2006/04/19 03:23:29  dsr
- * Rename/Import to OpenCPN
+ * Rename/Import to Komodo Exercise 2016
  *
  * Revision 1.20  2003/06/09 13:48:54  warmerda
  * added DB2 V7.2 byte order hack

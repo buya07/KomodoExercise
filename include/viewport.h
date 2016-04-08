@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN ViewPort
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 ViewPort
  * Author:   David Register
  *
  ***************************************************************************

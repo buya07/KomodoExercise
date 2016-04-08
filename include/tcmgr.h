@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Tide and Current Manager
  * Author:   David Register
  * Todo add original author

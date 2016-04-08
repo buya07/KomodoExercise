@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  S52 Utility Library
  * Author:   David Register, Sylvain Duclos
  *

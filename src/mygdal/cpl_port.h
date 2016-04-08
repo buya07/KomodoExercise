@@ -45,7 +45,7 @@
  * Initial import as opencpn, GNU Automake compliant.
  *
  * Revision 1.1.1.1  2006/04/19 03:23:28  dsr
- * Rename/Import to OpenCPN
+ * Rename/Import to Komodo Exercise 2016
  *
  * Revision 1.36  2004/01/06 21:42:32  warmerda
  * "Fix" for bug 455 related to CPL_IS_LSB macro.

@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Navigation Utility Functions
  * Author:   David Register
  *

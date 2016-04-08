@@ -31,7 +31,7 @@
  * Initial import as opencpn, GNU Automake compliant.
  *
  * Revision 1.1.1.1  2006/04/19 03:23:28  dsr
- * Rename/Import to OpenCPN
+ * Rename/Import to Komodo Exercise 2016
  *
  * Revision 1.7  2001/11/01 17:01:28  warmerda
  * pass output buffer into OGRMakeWktCoordinate

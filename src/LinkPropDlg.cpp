@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Hyperlink properties
  * Author:   David Register
  *
@@ -127,7 +127,7 @@ void LinkPropImpl::OnLocalFileClick( wxCommandEvent& event )
 void LinkPropImpl::OnOkClick( wxCommandEvent& event )
 {
     if( m_textCtrlLinkUrl->GetValue() == wxEmptyString ) 
-        OCPNMessageBox( NULL, _("Link not complete, can't be saved."), _("OpenCPN Info"), wxICON_HAND );
+        OCPNMessageBox( NULL, _("Link not complete, can't be saved."), _("Komodo Exercise 2016 Info"), wxICON_HAND );
     
     else
         event.Skip();

@@ -33,7 +33,7 @@
  * Initial import as opencpn, GNU Automake compliant.
  *
  * Revision 1.1.1.1  2006/04/19 03:23:28  dsr
- * Rename/Import to OpenCPN
+ * Rename/Import to Komodo Exercise 2016
  *
  * Revision 1.17  2003/10/09 15:27:41  warmerda
  * added OGRLayer::DeleteFeature() support

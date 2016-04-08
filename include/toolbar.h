@@ -1,7 +1,7 @@
 /****************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Toolbar
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Toolbar
  * Author:   David Register
  *
  ***************************************************************************

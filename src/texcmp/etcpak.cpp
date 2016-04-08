@@ -1,5 +1,5 @@
 /*
-  Modified for OpenCPN  by Sean D'Epagnier 2014
+  Modified for Komodo Exercise 2016  by Sean D'Epagnier 2014
 
 Copyright (c) 2013, Bartosz Taudul <wolf.pld@gmail.com>
 All rights reserved.

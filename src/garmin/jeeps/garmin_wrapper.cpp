@@ -1,5 +1,5 @@
 /*
-    Garmin Jeeps - OpenCPN Interface Wrapper.
+    Garmin Jeeps - Komodo Exercise 2016 Interface Wrapper.
 
     Copyright (C) 2010 David S Register
 
@@ -327,7 +327,7 @@ int Garmin_GPS_SendRoute( const wxString &port_name, Route *pr, wxGauge *pProgre
             if(!bfound_empty)
             {
                   int rv = OCPNMessageBox(NULL, _("Overwrite Garmin device route number 1?"),
-                                          _("OpenCPN Message"), wxOK | wxCANCEL | wxICON_QUESTION);
+                                          _("Komodo Exercise 2016 Message"), wxOK | wxCANCEL | wxICON_QUESTION);
                   if(rv != wxOK)
                         return 0;
             }

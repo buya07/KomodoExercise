@@ -1,6 +1,6 @@
 /**************************************************************************
 *
-* Project:  OpenCPN
+* Project:  Komodo Exercise 2016
 * Purpose:  RouteProperties Support
 * Author:   David Register
 *
@@ -1400,7 +1400,7 @@ void RouteProp::OnRoutePropMenuSelected( wxCommandEvent& event )
         }
         case ID_RCLK_MENU_DELETE: {
             int dlg_return = OCPNMessageBox( this, _("Are you sure you want to remove this waypoint?"),
-                    _("OpenCPN Remove Waypoint"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
+                    _("Komodo Exercise 2016 Remove Waypoint"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
 
             if( dlg_return == wxID_YES ) {
                 long item = -1;

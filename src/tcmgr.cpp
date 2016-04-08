@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Tide and Current Manager
  * Author:   David Register
  *
@@ -759,7 +759,7 @@ TC_Error_Code TCMgr::LoadDataSources(wxArrayString &sources)
     
     if (m_Combined_IDX_array.Count() <= 1)
         OCPNMessageBox( NULL, _("It seems you have no tide/current harmonic data installed."),
-                        _("OpenCPN Info"), wxOK | wxCENTER );
+                        _("Komodo Exercise 2016 Info"), wxOK | wxCENTER );
         
     return  TC_NO_ERROR ;
 }

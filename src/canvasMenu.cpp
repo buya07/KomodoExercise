@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  CanvasMenuHandler
  * Author:   David Register
  *
@@ -1154,7 +1154,7 @@ void CanvasMenuHandler::PopupMenuHandler( wxCommandEvent& event )
         int dlg_return = wxID_YES;
         if( g_bConfirmObjectDelete ) {
             dlg_return = OCPNMessageBox( parent,  _("Are you sure you want to delete this route?"),
-                _("OpenCPN Route Delete"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
+                _("Komodo Exercise 2016 Route Delete"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
         }
 
         if( dlg_return == wxID_YES ) {
@@ -1409,7 +1409,7 @@ void CanvasMenuHandler::PopupMenuHandler( wxCommandEvent& event )
         int dlg_return = wxID_YES;
         if( g_bConfirmObjectDelete ) {
             dlg_return = OCPNMessageBox( parent, _("Are you sure you want to delete this track?"),
-                _("OpenCPN Track Delete"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
+                _("Komodo Exercise 2016 Track Delete"), (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
         }
 
         if( dlg_return == wxID_YES ) {

@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Navigation Utility Functions
  * Author:   David Register
  *
@@ -3271,7 +3271,7 @@ void MyConfig::UI_ImportGPX( wxWindow* parent, bool islayer, wxString dirpath, b
                     l->m_NoOfItems = pSet->LoadAllGPXObjectsAsLayer(l->m_LayerID, l->m_bIsVisibleOnChart);
                 }
                 else
-                    pSet->LoadAllGPXObjects( !pSet->IsOpenCPN() ); // Import with full vizibility of names and objects
+                    pSet->LoadAllGPXObjects( !pSet->OpenCPN() ); // Import with full vizibility of names and objects
 
                 delete pSet;
             }

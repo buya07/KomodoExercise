@@ -1,7 +1,7 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Route printout
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Route printout
  * Author:   Pavel Saviankou
  *
  ***************************************************************************
@@ -468,7 +468,7 @@ void RoutePrintSelection::OnRoutepropOkClick( wxCommandEvent& event )
             OCPNMessageBox(
                 NULL,
                 _( "There was a problem printing.\nPerhaps your current printer is not set correctly?" ),
-                _T( "OpenCPN" ), wxOK );
+                _T( "Komodo Exercise 2016" ), wxOK );
         }
     }
 

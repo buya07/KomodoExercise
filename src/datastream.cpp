@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  NMEA Data Stream Object
  * Author:   David Register
  *
@@ -1930,7 +1930,7 @@ bool DataStream::SetOutputSocketOptions(wxSocketBase* tsock)
     // Disable nagle algorithm on outgoing connection
     // Doing this here rather than after the accept() is
     // pointless  on platforms where TCP_NODELAY is
-    // not inherited.  However, none of OpenCPN's currently
+    // not inherited.  However, none of Komodo Exercise 2016's currently
     // supported platforms fall into that category.
 
     int nagleDisable=1;

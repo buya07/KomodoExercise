@@ -1,7 +1,7 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Toolbar
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Toolbar
  * Author:   David Register
  *
  ***************************************************************************
@@ -957,7 +957,7 @@ void ocpnFloatingToolbarDialog::OnToolLeftClick( wxCommandEvent& event )
                 if( m_ptoolbar->GetVisibleToolCount() == 1 ) {
                     OCPNMessageBox( this,
                             _("You can't hide the last tool from the toolbar\nas this would make it inaccessible."),
-                            _("OpenCPN Alert"), wxOK );
+                            _("Komodo Exercise 2016 Alert"), wxOK );
                     g_FloatingToolbarConfigMenu->FindItem( event.GetId() )->Check( true );
                     return;
                 }
@@ -2344,7 +2344,7 @@ void ocpnToolBarSimple::OnRightClick( int id, long WXUNUSED(x), long WXUNUSED(y)
 {
     HideTooltip();
     
-    ToolbarChoicesDialog *dlg = new ToolbarChoicesDialog(NULL, -1, _T("OpenCPN"), wxDefaultPosition, wxSize(100,100));
+    ToolbarChoicesDialog *dlg = new ToolbarChoicesDialog(NULL, -1, _T("Komodo Exercise 2016"), wxDefaultPosition, wxSize(100,100));
     int rc = dlg->ShowModal();
     delete dlg;
     
@@ -2452,7 +2452,7 @@ void ocpnToolBarSimple::SetToolBitmapsSVG( int id, wxString fileSVGNormal, wxStr
 //-------------------------------------------------------------------------------------
 
 ToolbarMOBDialog::ToolbarMOBDialog( wxWindow* parent )
-       : wxDialog( parent, wxID_ANY, _("OpenCPN Alert"), wxDefaultPosition, wxSize(250, 230) )
+       : wxDialog( parent, wxID_ANY, _("Komodo Exercise 2016 Alert"), wxDefaultPosition, wxSize(250, 230) )
 {
     wxBoxSizer* topSizer = new wxBoxSizer( wxVERTICAL );
 

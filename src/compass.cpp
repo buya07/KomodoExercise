@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Main wxWidgets Program
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Main wxWidgets Program
  * Author:   David Register
  *
  ***************************************************************************

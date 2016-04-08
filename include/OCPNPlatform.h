@@ -1,7 +1,7 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Platform specific support utilities
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Platform specific support utilities
  * Author:   David Register
  *
  ***************************************************************************

@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  S52 Presentation Library
  * Authors:   David Register
  *            Jesper Weissglas
@@ -7584,7 +7584,7 @@ bool s52plib::ObjectRenderCheckCat( ObjRazRules *rzRules, ViewPort *vp )
         //      According to S52 specs, SCAMIN must not apply to GROUP1 objects, Meta Objects
         //      or DisplayCategoryBase objects.
         //      Occasionally, an ENC will encode a spurious SCAMIN value for one of these objects.
-        //      see, for example, US5VA18M, in OpenCPN SENC as Feature 350(DEPARE), LNAM = 022608187ED20ACC.
+        //      see, for example, US5VA18M, in Komodo Exercise 2016 SENC as Feature 350(DEPARE), LNAM = 022608187ED20ACC.
         //      We shall explicitly ignore SCAMIN filtering for these types of objects.
 
         if( m_bUseSCAMIN ) {

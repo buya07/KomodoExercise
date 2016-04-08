@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Route Manager
  * Author:   David Register
  *
@@ -784,7 +784,7 @@ bool Routeman::DeleteRoute( Route *pRoute )
     if( pRoute ) {
         if( pRoute == pAISMOBRoute )
         {
-            int ret = OCPNMessageBox( NULL, _("You are trying to delete an active AIS MOB route, are you REALLY sure?"), _("OpenCPN Warning"), wxYES_NO );
+            int ret = OCPNMessageBox( NULL, _("You are trying to delete an active AIS MOB route, are you REALLY sure?"), _("Komodo Exercise 2016 Warning"), wxYES_NO );
             
             if( ret == wxID_NO )
                 return false;
@@ -860,7 +860,7 @@ void Routeman::DeleteAllRoutes( void )
         if( proute == pAISMOBRoute )
         {
             ::wxEndBusyCursor();
-            int ret = OCPNMessageBox( NULL, _("You are trying to delete an active AIS MOB route, are you REALLY sure?"), _("OpenCPN Warning"), wxYES_NO );
+            int ret = OCPNMessageBox( NULL, _("You are trying to delete an active AIS MOB route, are you REALLY sure?"), _("Komodo Exercise 2016 Warning"), wxYES_NO );
             if( ret == wxID_NO )
                 return;
             else
@@ -927,7 +927,7 @@ void Routeman::DeleteTrack( Route *pRoute )
 
         int count = pRoute->pRoutePointList->GetCount();
         if( count > 10000) {
-            pprog = new wxProgressDialog( _("OpenCPN Track Delete"), _T("0/0"), count, NULL, 
+            pprog = new wxProgressDialog( _("Komodo Exercise 2016 Track Delete"), _T("0/0"), count, NULL, 
                                           wxPD_APP_MODAL | wxPD_SMOOTH |
                                           wxPD_ELAPSED_TIME | wxPD_ESTIMATED_TIME | wxPD_REMAINING_TIME );
             pprog->SetSize( 400, wxDefaultCoord );

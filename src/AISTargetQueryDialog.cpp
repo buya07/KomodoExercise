@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  *
  ***************************************************************************
  *   Copyright (C) 2013 by David S. Register                               *
@@ -168,8 +168,8 @@ void AISTargetQueryDialog::OnIdTrkCreateClick( wxCommandEvent& event )
                 Refresh( false );
          
                 if( wxID_YES == OCPNMessageBox(NULL,
-                    _("The recently captured track of this target has been recorded.\nDo you want to continue recording until the end of the current OpenCPN session?"),
-                    _("OpenCPN Info"), wxYES_NO | wxCENTER, 60 ) )
+                    _("The recently captured track of this target has been recorded.\nDo you want to continue recording until the end of the current Komodo Exercise 2016 session?"),
+                    _("Komodo Exercise 2016 Info"), wxYES_NO | wxCENTER, 60 ) )
                 {
                     td->b_PersistTrack = true;
                     g_pAIS->m_persistent_tracks[td->MMSI] = t;

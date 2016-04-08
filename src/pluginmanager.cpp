@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  PlugIn Manager Object
  * Author:   David Register
  *
@@ -378,7 +378,7 @@ bool PlugInManager::LoadAllPlugIns(const wxString &plugin_dir, bool load_enabled
         if(m_benable_blackdialog && !b_compat)
         {
             wxLogMessage(wxString::Format(_("    Incompatible PlugIn detected: %s"), file_name.c_str()));
-            OCPNMessageBox( NULL, wxString::Format(_("The plugin %s is not compatible with this version of OpenCPN, please get an updated version."), plugin_file.c_str()), wxString(_("OpenCPN Info")), wxICON_INFORMATION | wxOK, 10 );
+            OCPNMessageBox( NULL, wxString::Format(_("The plugin %s is not compatible with this version of Komodo Exercise 2016, please get an updated version."), plugin_file.c_str()), wxString(_("Komodo Exercise 2016 Info")), wxICON_INFORMATION | wxOK, 10 );
         }
             
         PlugInContainer *pic = NULL;
@@ -804,7 +804,7 @@ bool PlugInManager::CheckPluginCompatibility(wxString plugin_file)
 void PlugInManager::ShowDeferredBlacklistMessages()
 {
     for( unsigned int i=0 ; i < m_deferred_blacklist_messages.GetCount() ; i++){
-        OCPNMessageBox ( NULL, m_deferred_blacklist_messages.Item(i), wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 5 );  // 5 second timeout
+        OCPNMessageBox ( NULL, m_deferred_blacklist_messages.Item(i), wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 5 );  // 5 second timeout
     }
         
 }
@@ -846,7 +846,7 @@ bool PlugInManager::CheckBlacklistedPlugin(opencpn_plugin* plugin)
             
             wxLogMessage(msg1);
             if(m_benable_blackdialog)
-                OCPNMessageBox ( NULL, msg, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 5 );  // 5 second timeout
+                OCPNMessageBox ( NULL, msg, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 5 );  // 5 second timeout
             else
                 m_deferred_blacklist_messages.Add(msg);
             
@@ -874,7 +874,7 @@ PlugInContainer *PlugInManager::LoadPlugIn(wxString plugin_file)
         msg = _("Unreadable PlugIn library detected, check the file permissions:\n");
         msg += plugin_file;
         msg += _T("\n\n");
-        OCPNMessageBox ( NULL, msg, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 10 );  // 10 second timeout
+        OCPNMessageBox ( NULL, msg, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 10 );  // 10 second timeout
     }
     else if(!plugin->IsLoaded())
     {
@@ -908,9 +908,9 @@ PlugInContainer *PlugInManager::LoadPlugIn(wxString plugin_file)
                     msg += msg1;
                     if(PluginBlacklist[i].all_lower)
                         msg += _(", and all previous versions,");
-                    msg += _(" is incompatible with this version of OpenCPN."),
+                    msg += _(" is incompatible with this version of Komodo Exercise 2016."),
                                             
-                    OCPNMessageBox ( NULL, msg, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 10 );  // 10 second timeout
+                    OCPNMessageBox ( NULL, msg, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 10 );  // 10 second timeout
                     break;
                 }
             }
@@ -3178,12 +3178,12 @@ wxString opencpn_plugin::GetCommonName()
 
 wxString opencpn_plugin::GetShortDescription()
 {
-    return _T("OpenCPN PlugIn Base Class");
+    return _T("Komodo Exercise 2016 PlugIn Base Class");
 }
 
 wxString opencpn_plugin::GetLongDescription()
 {
-    return _T("OpenCPN PlugIn Base Class\n\
+    return _T("Komodo Exercise 2016 PlugIn Base Class\n\
 PlugInManager created this base class");
 }
 

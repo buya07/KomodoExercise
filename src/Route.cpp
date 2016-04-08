@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  *
  ***************************************************************************
  *   Copyright (C) 2013 by David S. Register                               *
@@ -1335,7 +1335,7 @@ int Route::SendToGPS(const wxString & com_name, bool bsend_waypoints, wxGauge *p
         else
             msg = _("Error on Route Upload.  Please check logfiles...");
 
-        OCPNMessageBox( NULL, msg, _("OpenCPN Info"), wxOK | wxICON_INFORMATION );
+        OCPNMessageBox( NULL, msg, _("Komodo Exercise 2016 Info"), wxOK | wxICON_INFORMATION );
     }
 
     return (result == 0);

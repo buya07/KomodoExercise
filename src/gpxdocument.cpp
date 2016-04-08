@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  GPX utility classes
  * Author:   David S. Register
  *
@@ -113,7 +113,7 @@ bool GpxDocument::SaveFile(const wxString &filename)
 
 GpxDocument::GpxDocument()
 {
-      PopulateEmptyDocument(_T("OpenCPN"));
+      PopulateEmptyDocument(_T("Komodo Exercise 2016"));
       AddCustomNamespace(_T("xmlns:opencpn"), _T("http://www.opencpn.org"));
       SeedRandom();
 }

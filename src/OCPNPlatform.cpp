@@ -1,7 +1,7 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Platform specific support utilities
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Platform specific support utilities
  * Author:   David Register
  *
  ***************************************************************************
@@ -326,9 +326,9 @@ void OCPNPlatform::Initialize_1( void )
     CR_INSTALL_INFO info;
     memset(&info, 0, sizeof(CR_INSTALL_INFO));
     info.cb = sizeof(CR_INSTALL_INFO);
-    info.pszAppName = _T("OpenCPN");
+    info.pszAppName = _T("Komodo Exercise 2016");
     
-    info.pszAppVersion = OpenCPNVersion.c_str();
+    info.pszAppVersion = Komodo Exercise 2016Version.c_str();
     
     int type = MiniDumpWithDataSegs;  // Include the data sections from all loaded modules.
     // This results in the inclusion of global variables

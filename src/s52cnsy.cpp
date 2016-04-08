@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  S52 Conditional Symbology Library
  * Author:   David Register, Sylvain Duclos
  *
@@ -1905,7 +1905,7 @@ static void *QUAPNT01(void *param);
 static void *QUAPOS01(void *param)
 // Remarks: The attribute QUAPOS, which identifies low positional accuracy, is attached
 // to the spatial object, not the feature object.
-// In OpenCPN implementation, QUAPOS of Point Objects has been converted to
+// In Komodo Exercise 2016 implementation, QUAPOS of Point Objects has been converted to
 // QUALTY attribute of object.
 //
 // This procedure passes the object to procedure QUALIN01 or QUAPNT01,

@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  S57 Chart Object
  * Author:   David Register
  *
@@ -4029,7 +4029,7 @@ int s57chart::ValidateAndCountUpdates( const wxFileName file000, const wxString 
                     if( !chain_broken_mssage_shown ){
                         OCPNMessageBox(NULL, 
                         _("S57 Cell Update chain incomplete.\nENC features may be incomplete or inaccurate.\nCheck the logfile for details."),
-                        _("OpenCPN Create SENC Warning"), wxOK | wxICON_EXCLAMATION, 30 );
+                        _("Komodo Exercise 2016 Create SENC Warning"), wxOK | wxICON_EXCLAMATION, 30 );
                         chain_broken_mssage_shown = true;
                     }
                     
@@ -6944,7 +6944,7 @@ int s57chart::GetENCScale( void )
 extern wxLog *logger;
 
 /************************************************************************/
-/*                       OpenCPN_OGRErrorHandler()                      */
+/*                       Komodo Exercise 2016_OGRErrorHandler()                      */
 /*                       Use Global wxLog Class                         */
 /************************************************************************/
 

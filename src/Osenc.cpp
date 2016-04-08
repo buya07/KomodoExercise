@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  S57 SENC File Object
  * Author:   David Register
  *
@@ -500,7 +500,7 @@ int Osenc::createSenc124(const wxString& FullPath000, const wxString& SENCFileNa
     wxString Message = SENCfile.GetFullPath();
     Message.Append( _T("...Ingesting") );
     
-    wxString Title( _("OpenCPN S57 SENC File Create...") );
+    wxString Title( _("Komodo Exercise 2016 S57 SENC File Create...") );
     Title.append( SENCfile.GetFullPath() );
     
     wxStopWatch progsw;
@@ -1282,7 +1282,7 @@ int Osenc::ValidateAndCountUpdates( const wxFileName file000, const wxString Cop
 //                             if( !chain_broken_mssage_shown ){
 //                                 OCPNMessageBox(NULL, 
 //                                                _("S57 Cell Update chain incomplete.\nENC features may be incomplete or inaccurate.\nCheck the logfile for details."),
-//                                                _("OpenCPN Create SENC Warning"), wxOK | wxICON_EXCLAMATION, 30 );
+//                                                _("Komodo Exercise 2016 Create SENC Warning"), wxOK | wxICON_EXCLAMATION, 30 );
 //                                                chain_broken_mssage_shown = true;
 //                             }
                             

@@ -1,7 +1,7 @@
 
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Optimized wxBitmap Object
  * Author:   David Register
  *

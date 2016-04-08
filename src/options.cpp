@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Options Dialog
  * Author:   David Register
  *
@@ -523,7 +523,7 @@ void MMSIEditDialog::OnMMSIEditOKClick(wxCommandEvent& event) {
     {
         if (wxID_CANCEL == OCPNMessageBox(this,
             _("An MMSI Id is generally a number of nine digits.\nPlease check your entries and cancel if necessary."),
-            _("OpenCPN Info"),
+            _("Komodo Exercise 2016 Info"),
             wxOK | wxCANCEL))
         {
             return;
@@ -5433,7 +5433,7 @@ ConnectionParams* options::CreateConnectionParamsFromSelectedItem(void) {
   if (!(m_cbInput->GetValue() || m_cbOutput->GetValue())) {
       m_pListbook->SetSelection(2);   // Raise connections page.
       OCPNMessageBox(NULL, _("Data connection must be input, output or both"),
-                   _("OpenCPN Info"), wxICON_HAND);
+                   _("Komodo Exercise 2016 Info"), wxICON_HAND);
 
     return NULL;
   }
@@ -5441,7 +5441,7 @@ ConnectionParams* options::CreateConnectionParamsFromSelectedItem(void) {
   if (m_rbTypeSerial->GetValue() && m_comboPort->GetValue() == wxEmptyString) {
       m_pListbook->SetSelection(2);   // Raise connections page.
       OCPNMessageBox(NULL, _("You must select or enter the port..."),
-                   _("OpenCPN Info"), wxICON_HAND);
+                   _("Komodo Exercise 2016 Info"), wxICON_HAND);
     return NULL;
   }
   //  TCP, GPSD and UDP require port field to be set.
@@ -5449,7 +5449,7 @@ ConnectionParams* options::CreateConnectionParamsFromSelectedItem(void) {
   else if (m_rbTypeNet->GetValue()) {
     if (wxAtoi(m_tNetPort->GetValue()) == 0) {
         m_pListbook->SetSelection(2);   // Raise connections page.
-        OCPNMessageBox(NULL, _("You must enter a port..."), _("OpenCPN Info"),
+        OCPNMessageBox(NULL, _("You must enter a port..."), _("Komodo Exercise 2016 Info"),
                      wxICON_HAND);
       return NULL;
     }
@@ -5458,7 +5458,7 @@ ConnectionParams* options::CreateConnectionParamsFromSelectedItem(void) {
           (m_rbNetProtoUDP->GetValue() && m_cbOutput->GetValue())) {
           m_pListbook->SetSelection(2);   // Raise connections page.
           OCPNMessageBox(NULL, _("You must enter the address..."),
-                       _("OpenCPN Info"), wxICON_HAND);
+                       _("Komodo Exercise 2016 Info"), wxICON_HAND);
         return NULL;
       } else {
         m_tNetAddress->SetValue(_T("0.0.0.0"));
@@ -5580,7 +5580,7 @@ void options::OnApplyClick(wxCommandEvent& event) {
       msg += _("\n - your minimum ship icon size must be between 1 and 100 mm");
     if (!msg.IsEmpty()) {
       msg.Prepend(_("The settings for own ship real size are not correct:"));
-      OCPNMessageBox(this, msg, _("OpenCPN info"), wxICON_ERROR | wxOK);
+      OCPNMessageBox(this, msg, _("Komodo Exercise 2016 info"), wxICON_ERROR | wxOK);
       ::wxEndBusyCursor();
       event.SetInt(wxID_STOP);
       return;
@@ -7818,7 +7818,7 @@ void SentenceListDlg::OnAddClick(wxCommandEvent& event) {
           The whole sentences then looks like GPGGA or AITXT.\n \
           You may filter out all the sentences with certain TALKER prefix (like GP, AI etc.).\n\n \
           The filter accepts just these three formats."),
-      _("OpenCPN Info"));
+      _("Komodo Exercise 2016 Info"));
 }
 
 void SentenceListDlg::OnDeleteClick(wxCommandEvent& event) {
@@ -7875,7 +7875,7 @@ OpenGLOptionsDlg::OpenGLOptionsDlg(wxWindow* parent)
   btnClear->Enable(g_GLOptions.m_bTextureCompressionCaching);
   m_cbShowFPS = new wxCheckBox(this, wxID_ANY, _("Show FPS"));
   m_cbSoftwareGL =
-      new wxCheckBox(this, wxID_ANY, _("Software OpenGL (restart OpenCPN)"));
+      new wxCheckBox(this, wxID_ANY, _("Software OpenGL (restart Komodo Exercise 2016)"));
   m_cbUseAcceleratedPanning =
       new wxCheckBox(this, wxID_ANY, _("Use Accelerated Panning"));
 

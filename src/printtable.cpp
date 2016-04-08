@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Route table printout
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Route table printout
  * Author:   Pavel Saviankou
  *
  ***************************************************************************

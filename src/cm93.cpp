@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  cm93 Chart Object
  * Author:   David Register
  *
@@ -6737,7 +6737,7 @@ CM93OffsetDialog::CM93OffsetDialog ( wxWindow *parent )
       m_selected_list_index = -1;
 
       long wstyle = wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER;
-      wxDialog::Create ( parent, -1, _ ( "OpenCPN CM93 Cell Offset Adjustments" ), wxPoint ( 0, 0 ), wxSize ( 800, 200 ), wstyle );
+      wxDialog::Create ( parent, -1, _ ( "Komodo Exercise 2016 CM93 Cell Offset Adjustments" ), wxPoint ( 0, 0 ), wxSize ( 800, 200 ), wstyle );
 
 
 

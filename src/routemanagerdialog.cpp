@@ -1126,7 +1126,7 @@ void RouteManagerDialog::OnRteDeleteClick( wxCommandEvent &event )
 {
     RouteList list;
 
-    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("OpenCPN Alert") ), wxYES_NO );
+    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
     if ( answer != wxID_YES )
         return;
 
@@ -1175,7 +1175,7 @@ void RouteManagerDialog::OnRteDeleteClick( wxCommandEvent &event )
 void RouteManagerDialog::OnRteDeleteAllClick( wxCommandEvent &event )
 {
     int dialog_ret = OCPNMessageBox( this, _("Are you sure you want to delete <ALL> routes?"),
-            wxString( _("OpenCPN Alert") ), wxYES_NO );
+            wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
 
     if( dialog_ret == wxID_YES ) {
         if( g_pRouteMan->GetpActiveRoute() ) g_pRouteMan->DeactivateRoute();
@@ -1551,7 +1551,7 @@ void RouteManagerDialog::OnTrkMenuSelected( wxCommandEvent &event )
             reduction = 100 * reduction / pointsBefore;
             wxString msg = wxString::Format( _("The amount of data used by the track\n was reduced by %d%%."),
                     reduction );
-            OCPNMessageBox( this, msg, _("OpenCPN info"), wxICON_INFORMATION | wxOK );
+            OCPNMessageBox( this, msg, _("Komodo Exercise 2016 info"), wxICON_INFORMATION | wxOK );
 
             UpdateTrkListCtrl();
             UpdateRouteListCtrl();
@@ -1838,7 +1838,7 @@ void RouteManagerDialog::OnTrkDeleteClick( wxCommandEvent &event )
 {
     RouteList list;
 
-    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("OpenCPN Alert") ), wxYES_NO );
+    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
     if ( answer != wxID_YES )
         return;
 
@@ -1911,7 +1911,7 @@ void RouteManagerDialog::TrackToRoute( Track *track )
     if( !track ) return;
     if( track->m_bIsInLayer ) return;
 
-    wxProgressDialog *pprog = new wxProgressDialog( _("OpenCPN Converting Track to Route...."),
+    wxProgressDialog *pprog = new wxProgressDialog( _("Komodo Exercise 2016 Converting Track to Route...."),
             _("Processing Waypoints..."), 101, NULL,
             wxPD_AUTO_HIDE | wxPD_SMOOTH | wxPD_ELAPSED_TIME | wxPD_ESTIMATED_TIME
                     | wxPD_REMAINING_TIME );
@@ -1946,7 +1946,7 @@ void RouteManagerDialog::OnTrkRouteFromTrackClick( wxCommandEvent &event )
 void RouteManagerDialog::OnTrkDeleteAllClick( wxCommandEvent &event )
 {
     int dialog_ret = OCPNMessageBox( this, _("Are you sure you want to delete <ALL> tracks?"),
-            wxString( _("OpenCPN Alert") ), wxYES_NO );
+            wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
 
     if( dialog_ret == wxID_YES ) {
         g_pRouteMan->DeleteAllTracks();
@@ -2241,7 +2241,7 @@ void RouteManagerDialog::OnWptDeleteClick( wxCommandEvent &event )
 {
     RoutePointList list;
 
-    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("OpenCPN Alert") ), wxYES_NO );
+    int answer = OCPNMessageBox( this, _("Are you sure you want to delete the selected object(s)"), wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
     if ( answer != wxID_YES )
         return;
 
@@ -2274,7 +2274,7 @@ void RouteManagerDialog::OnWptDeleteClick( wxCommandEvent &event )
 
                 if ( wp->m_bIsInRoute || wp->m_bIsInTrack )
                 {
-                    if ( wxID_YES == OCPNMessageBox(this,  _( "The waypoint you want to delete is used in a route, do you really want to delete it?" ), _( "OpenCPN Alert" ), wxYES_NO ))
+                    if ( wxID_YES == OCPNMessageBox(this,  _( "The waypoint you want to delete is used in a route, do you really want to delete it?" ), _( "Komodo Exercise 2016 Alert" ), wxYES_NO ))
                             pWayPointMan->DestroyWaypoint( wp );
                 }
                 else
@@ -2406,7 +2406,7 @@ void RouteManagerDialog::OnWptDeleteAllClick( wxCommandEvent &event )
         buttons = wxYES_NO | wxCANCEL;
         type = 2;
     }
-    int answer = OCPNMessageBox( this, prompt, wxString( _("OpenCPN Alert") ), buttons );
+    int answer = OCPNMessageBox( this, prompt, wxString( _("Komodo Exercise 2016 Alert") ), buttons );
     if ( answer == wxID_YES )
         pWayPointMan->DeleteAllWaypoints( true );
     if ( answer == wxID_NO && type == 2 )
@@ -2531,7 +2531,7 @@ void RouteManagerDialog::OnLayDeleteClick( wxCommandEvent &event )
     if( !layer ) return;
 
     wxString prompt = _("Are you sure you want to delete this layer and <ALL> of its contents?");
-    int answer = OCPNMessageBox( this, prompt, wxString( _("OpenCPN Alert") ), wxYES_NO );
+    int answer = OCPNMessageBox( this, prompt, wxString( _("Komodo Exercise 2016 Alert") ), wxYES_NO );
     if ( answer == wxID_NO )
         return;
     

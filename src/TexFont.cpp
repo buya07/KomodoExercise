@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  texture OpenGL text rendering built from wxFont
  * Author:   Sean D'Epagnier
  *

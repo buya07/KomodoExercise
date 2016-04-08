@@ -1,7 +1,7 @@
 /***************************************************************************
  *
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  PlugIn Manager Object
  * Author:   David Register
  *

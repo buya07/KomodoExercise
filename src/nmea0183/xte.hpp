@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  NMEA0183 Support Classes
  * Author:   Samuel R. Blackburn, David S. Register, Jon Gough
  *

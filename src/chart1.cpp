@@ -1,7 +1,7 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
- * Purpose:  OpenCPN Main wxWidgets Program
+ * Project:  Komodo Exercise 2016
+ * Purpose:  Komodo Exercise 2016 Main wxWidgets Program
  * Author:   David Register
  *
  ***************************************************************************
@@ -771,21 +771,21 @@ int ShowNavWarning()
 {
     wxString msg0(
             _("\n\
-OpenCPN is distributed in the hope that it will be useful,\n\
+Komodo Exercise 2016 is distributed in the hope that it will be useful,\n\
 but WITHOUT ANY WARRANTY; without even the implied\n\
 warranty of MERCHANTABILITY or FITNESS FOR A\n\
 PARTICULAR PURPOSE.\n\
 See the GNU General Public License for more details.\n\n\
-OpenCPN must only be used in conjunction with approved\n\
+Komodo Exercise 2016 must only be used in conjunction with approved\n\
 paper charts and traditional methods of navigation.\n\n\
-DO NOT rely upon OpenCPN for safety of life or property.\n\n\
+DO NOT rely upon Komodo Exercise 2016 for safety of life or property.\n\n\
 Please click \"OK\" to agree and proceed, \"Cancel\" to quit.\n") );
 
     wxString vs =
         wxString::Format(wxT(" .. Version %i.%i.%i"),
             VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH);
 
-    wxMessageDialog odlg( gFrame, msg0, _("Welcome to OpenCPN") + vs, wxCANCEL | wxOK );
+    wxMessageDialog odlg( gFrame, msg0, _("Welcome to Komodo Exercise 2016") + vs, wxCANCEL | wxOK );
 
     return ( odlg.ShowModal() );
 }
@@ -837,7 +837,7 @@ END_EVENT_TABLE()
 #if wxUSE_CMDLINE_PARSER
 void MyApp::OnInitCmdLine( wxCmdLineParser& parser )
 {
-    //    Add some OpenCPN specific command line options
+    //    Add some Komodo Exercise 2016 specific command line options
     parser.AddSwitch( _T("unit_test_1") );
     parser.AddSwitch( _T("p") );
     parser.AddSwitch( _T("no_opengl") );
@@ -1155,7 +1155,7 @@ bool MyApp::OnInit()
     //  On Windows
     //  We allow only one instance unless the portable option is used
 #ifdef __WXMSW__
-    m_checker = new wxSingleInstanceChecker(_T("OpenCPN"));
+    m_checker = new wxSingleInstanceChecker(_T("Komodo Exercise 2016"));
     if(!g_bportable) {
         if ( m_checker->IsAnotherRunning() )
             return false;               // exit quietly
@@ -1171,7 +1171,7 @@ bool MyApp::OnInit()
 #if wxCHECK_VERSION(3,0,0)
     // Set the name of the app as displayed to the user.
     // This is necessary at least on OS X, for the capitalisation to be correct in the system menus.
-    MyApp::SetAppDisplayName("OpenCPN");
+    MyApp::SetAppDisplayName("Komodo Exercise 2016");
 #endif
 
 
@@ -1232,7 +1232,7 @@ bool MyApp::OnInit()
     wxString imsg = date_now.FormatISODate();
     wxLogMessage( imsg );
 
-    imsg = _T(" ------- Starting OpenCPN -------");
+    imsg = _T(" ------- Starting Komodo Exercise 2016 -------");
     wxLogMessage( imsg );
 
     wxString version = OpenCPNVersion;
@@ -1368,7 +1368,7 @@ bool MyApp::OnInit()
     g_StyleManager->SetStyle( g_uiStyle );
     if( !g_StyleManager->IsOK() ) {
         wxString msg = _("Failed to initialize the user interface. ");
-        msg << _("OpenCPN cannot start. ");
+        msg << _("Komodo Exercise 2016 cannot start. ");
         msg << _("The necessary configuration files were not found. ");
         msg << _("See the log file at ") << g_Platform->GetLogFileName() << _(" for details.") << _T("\n\n");
         msg << g_Platform->GetSharedDataDir();
@@ -1447,7 +1447,7 @@ bool MyApp::OnInit()
     //  If so, override the config file value and use this selection for opencpn...
 #ifdef __WXMSW__
     if( g_bFirstRun ) {
-        wxRegKey RegKey( wxString( _T("HKEY_LOCAL_MACHINE\\SOFTWARE\\OpenCPN") ) );
+        wxRegKey RegKey( wxString( _T("HKEY_LOCAL_MACHINE\\SOFTWARE\\Komodo Exercise 2016") ) );
         if( RegKey.Exists() ) {
             wxLogMessage( _("Retrieving initial language selection from Windows Registry") );
             RegKey.QueryValue( wxString( _T("InstallerLanguage") ), g_locale );
@@ -1500,7 +1500,7 @@ bool MyApp::OnInit()
 //    wxLog::SetVerbose( false );           // log no more verbose messages
 
     //  French language locale is assumed to include the AZERTY keyboard
-    //  This applies to either the system language, or to OpenCPN language selection
+    //  This applies to either the system language, or to Komodo Exercise 2016 language selection
     if( loc_lang_canonical == _T("fr_FR") ) g_b_assume_azerty = true;
     if( def_lang_canonical == _T("fr_FR") ) g_b_assume_azerty = true;
 #else
@@ -1585,7 +1585,7 @@ bool MyApp::OnInit()
     global_color_scheme = GLOBAL_COLOR_SCHEME_DAY;
 
     // On Windows platforms, establish a default cache managment policy
-    // as allowing OpenCPN a percentage of available physical memory,
+    // as allowing Komodo Exercise 2016 a percentage of available physical memory,
     // not to exceed 1 GB
     // Note that this logic implies that Windows platforms always use
     // the memCacheLimit policy, and never use the fallback nCacheLimit policy
@@ -1746,7 +1746,8 @@ bool MyApp::OnInit()
     app_style |= wxWANTS_CHARS;
 
 // Create the main frame window
-    wxString myframe_window_title = wxString::Format(wxT("OpenCPN %i.%i.%i"),
+    /* edit by komputer11 */
+    wxString myframe_window_title = wxString::Format(wxT("KOMODO EXERCISE 2016 "),
             VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH); //Gunther
 
     if( g_bportable ) {
@@ -1876,7 +1877,7 @@ bool MyApp::OnInit()
     if( g_bFirstRun ) {
         int ndirs = 0;
 
-        wxRegKey RegKey( wxString( _T("HKEY_LOCAL_MACHINE\\SOFTWARE\\OpenCPN") ) );
+        wxRegKey RegKey( wxString( _T("HKEY_LOCAL_MACHINE\\SOFTWARE\\Komodo Exercise 2016") ) );
         if( RegKey.Exists() ) {
             wxLogMessage( _("Retrieving initial Chart Directory set from Windows Registry") );
             wxString dirs;
@@ -1932,9 +1933,9 @@ bool MyApp::OnInit()
 //              Create and Save a new Chart Database based on the hints given in the config file
 
             /*
-             wxString msg1(_("OpenCPN needs to update the chart database from config file entries...."));
+             wxString msg1(_("Komodo Exercise 2016 needs to update the chart database from config file entries...."));
 
-             OCPNMessageDialog mdlg(gFrame, msg1, wxString(_("OpenCPN Info")),wxICON_INFORMATION | wxOK );
+             OCPNMessageDialog mdlg(gFrame, msg1, wxString(_("Komodo Exercise 2016 Info")),wxICON_INFORMATION | wxOK );
              int dlg_ret;
              dlg_ret = mdlg.ShowModal();
              */
@@ -1947,7 +1948,7 @@ bool MyApp::OnInit()
             wxString dummy1 = _("Elapsed time : ");
             wxString dummy2 = _("Estimated time : ");
             wxString dummy3 = _("Remaining time : ");
-            wxProgressDialog *pprog = new wxProgressDialog( _("OpenCPN Chart Update"), line, 100,
+            wxProgressDialog *pprog = new wxProgressDialog( _("Komodo Exercise 2016 Chart Update"), line, 100,
                     NULL,
                     wxPD_SMOOTH | wxPD_ELAPSED_TIME | wxPD_ESTIMATED_TIME | wxPD_REMAINING_TIME );
 
@@ -1966,7 +1967,7 @@ bool MyApp::OnInit()
             wxString msg1(
                     _("No Charts Installed.\nPlease select chart folders in Options > Charts.") );
 
- ///           OCPNMessageBox(gFrame, msg1, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK );
+ ///           OCPNMessageBox(gFrame, msg1, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK );
 
 
 ///            gFrame->DoOptionsDialog();
@@ -2134,7 +2135,7 @@ extern ocpnGLOptions g_GLOptions;
     // Start delayed initialization chain after 100 milliseconds
     gFrame->InitTimer.Start( 100, wxTIMER_CONTINUOUS );
 
-    wxLogMessage( wxString::Format(_("OpenCPN Initialized in %ld ms."), sw.Time() ) );
+    wxLogMessage( wxString::Format(_("Komodo Exercise 2016 Initialized in %ld ms."), sw.Time() ) );
 
 #ifdef __OCPN__ANDROID__
     androidHideBusyIcon();
@@ -2820,7 +2821,7 @@ ocpnToolBarSimple *MyFrame::CreateAToolbar()
     }
 
     CheckAndAddPlugInTool( tb );
-    tipString = _("About OpenCPN");
+    tipString = _("About Komodo Exercise 2016");
     if( _toolbarConfigMenuUtil( ID_ABOUT, tipString ) )
         tb->AddTool( ID_ABOUT, _T("help"),
             style->GetToolIcon( _T("help"), TOOLICON_NORMAL ), tipString, wxITEM_NORMAL );
@@ -3849,7 +3850,7 @@ void MyFrame::SetGroupIndex( int index )
         msg += GetGroupName( old_group_index );
         msg += _("\" is empty, switching to \"All Active Charts\" group.");
 
-        OCPNMessageBox( this, msg, _("OpenCPN Group Notice"), wxOK );
+        OCPNMessageBox( this, msg, _("Komodo Exercise 2016 Group Notice"), wxOK );
     }
 }
 
@@ -5026,7 +5027,7 @@ void MyFrame::RegisterGlobalMenuItems()
     nav_menu->Append( ID_MENU_SCALE_OUT, _menuText(_("Smaller Scale Chart"), _T("Ctrl-Right")) );
 #ifndef __WXOSX__
     nav_menu->AppendSeparator();
-    nav_menu->Append( ID_MENU_OQUIT, _menuText(_("Exit OpenCPN"), _T("Ctrl-Q")) );
+    nav_menu->Append( ID_MENU_OQUIT, _menuText(_("Exit Komodo Exercise 2016"), _T("Ctrl-Q")) );
 #endif
     m_pMenuBar->Append( nav_menu, _("&Navigate") );
 
@@ -5111,8 +5112,8 @@ void MyFrame::RegisterGlobalMenuItems()
 
     m_pMenuBar->Append( tools_menu, _("&Tools") );
     wxMenu* help_menu = new wxMenu();
-    help_menu->Append( wxID_ABOUT, _("About OpenCPN") );
-    help_menu->Append( wxID_HELP, _("OpenCPN Help") );
+    help_menu->Append( wxID_ABOUT, _("About Komodo Exercise 2016") );
+    help_menu->Append( wxID_HELP, _("Komodo Exercise 2016 Help") );
     m_pMenuBar->Append( help_menu, _("&Help") );
 
 
@@ -5425,8 +5426,8 @@ int MyFrame::ProcessOptionsDialog( int rr, ArrayOfCDI *pNewDirArray )
 
     if( ( rr & LOCALE_CHANGED ) || ( rr & STYLE_CHANGED ) ) {
         if( ( prev_locale != g_locale ) || ( rr & STYLE_CHANGED ) ) {
-            OCPNMessageBox(NULL, _("Please restart OpenCPN to activate language or style changes."),
-                    _("OpenCPN Info"), wxOK | wxICON_INFORMATION );
+            OCPNMessageBox(NULL, _("Please restart Komodo Exercise 2016 to activate language or style changes."),
+                    _("Komodo Exercise 2016 Info"), wxOK | wxICON_INFORMATION );
             if( rr & LOCALE_CHANGED ) g_blocale_changed = true;;
         }
     }
@@ -5713,9 +5714,9 @@ bool MyFrame::UpdateChartDatabaseInplace( ArrayOfCDI &DirArray, bool b_force, bo
 
     wxProgressDialog *pprog = NULL;
     if( b_prog ) {
-        wxString longmsg = _("OpenCPN Chart Update");
+        wxString longmsg = _("Komodo Exercise 2016 Chart Update");
         longmsg += _T("..........................................................................");
-        pprog = new wxProgressDialog( _("OpenCPN Chart Update"), longmsg,
+        pprog = new wxProgressDialog( _("Komodo Exercise 2016 Chart Update"), longmsg,
                 100, this,
                 wxPD_SMOOTH | wxPD_ELAPSED_TIME | wxPD_ESTIMATED_TIME | wxPD_REMAINING_TIME );
     }
@@ -8426,9 +8427,9 @@ void MyFrame::DoPrint( void )
     if( !printer.Print( this, &printout, true ) ) {
         if( wxPrinter::GetLastError() == wxPRINTER_ERROR ) OCPNMessageBox(NULL,
                 _("There was a problem printing.\nPerhaps your current printer is not set correctly?"),
-                _T("OpenCPN"), wxOK );
+                _T("Komodo Exercise 2016"), wxOK );
 //        else
-//            OCPNMessageBox(_T("Print Cancelled"), _T("OpenCPN"), wxOK);
+//            OCPNMessageBox(_T("Print Cancelled"), _T("Komodo Exercise 2016"), wxOK);
     } else {
         ( *g_printData ) = printer.GetPrintDialogData().GetPrintData();
     }
@@ -10851,12 +10852,12 @@ bool CheckSerialAccess( void )
     if(!result1.size())
         wxExecute(_T("stat -c %G /dev/ttyACM0"), result1);
 
-    wxString msg1 = _("OpenCPN requires access to serial ports to use serial NMEA data.\n");
+    wxString msg1 = _("Komodo Exercise 2016 requires access to serial ports to use serial NMEA data.\n");
     if(!result1.size()) {
         wxString msg = msg1 + _("No Serial Ports can be found on this system.\n\
 You must install a serial port (modprobe correct kernel module) or plug in a usb serial device.\n");
 
-        OCPNMessageBox ( NULL, msg, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 30 );
+        OCPNMessageBox ( NULL, msg, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 30 );
         return false;
     }
 
@@ -10877,7 +10878,7 @@ You must install a serial port (modprobe correct kernel module) or plug in a usb
 
         wxString msg = msg1 + _("\
 You do currently not have permission to access the serial ports on this system.\n\n\
-It is suggested that you exit OpenCPN now,\n\
+It is suggested that you exit Komodo Exercise 2016 now,\n\
 and add yourself to the correct group to enable serial port access.\n\n\
 You may do so by executing the following command from the linux command line:\n\n\
                 sudo usermod -a -G ");
@@ -10887,7 +10888,7 @@ You may do so by executing the following command from the linux command line:\n\
         msg += user;
         msg += _T("\n");
 
-        OCPNMessageBox ( NULL, msg, wxString( _("OpenCPN Info") ), wxICON_INFORMATION | wxOK, 30 );
+        OCPNMessageBox ( NULL, msg, wxString( _("Komodo Exercise 2016 Info") ), wxICON_INFORMATION | wxOK, 30 );
     }
 
 

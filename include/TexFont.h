@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  OpenGL text rendering
  * Author:   Sean D'Epagnier
  *

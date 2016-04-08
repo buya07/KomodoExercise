@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  PlugIn Object Definition/API
  * Author:   David Register
  *
@@ -655,7 +655,7 @@ extern "C"  DECL_EXP void DimeWindow(wxWindow *);
 extern "C"  DECL_EXP void JumpToPosition(double lat, double lon, double scale);
 
 /* API 1.9  adds some common cartographic functions to avoid unnecessary code duplication */
-/* Study the original OpenCPN source (georef.c) for functional definitions  */
+/* Study the original Komodo Exercise 2016 source (georef.c) for functional definitions  */
 
 extern "C" DECL_EXP void PositionBearingDistanceMercator_Plugin(double lat, double lon, double brg, double dist, double *dlat, double *dlon);
 extern "C" DECL_EXP void DistanceBearingMercator_Plugin(double lat0, double lon0, double lat1, double lon1, double *brg, double *dist);
@@ -691,7 +691,7 @@ extern DECL_EXP bool DeleteOptionsPage( wxScrolledWindow* page );
 /* API 1.10  */
 
 /* API 1.10  adds some common functions to avoid unnecessary code duplication */
-/* Study the original OpenCPN source for functional definitions  */
+/* Study the original Komodo Exercise 2016 source for functional definitions  */
 extern "C" DECL_EXP double toUsrDistance_Plugin( double nm_distance, int unit = -1 );
 extern "C" DECL_EXP double fromUsrDistance_Plugin( double usr_distance, int unit = -1 );
 extern "C" DECL_EXP double toUsrSpeed_Plugin( double kts_speed, int unit = -1 );
@@ -1036,7 +1036,7 @@ extern  DECL_EXP int PlatformFileSelectorDialog( wxWindow *parent, wxString *fil
                                 wxString suggestedName, wxString wildcard);
 
 
-/*  OpenCPN HTTP File Download PlugIn Interface   */
+/*  Komodo Exercise 2016 HTTP File Download PlugIn Interface   */
 
 /*   Various method Return Codes, etc          */
 typedef enum _OCPN_DLStatus{

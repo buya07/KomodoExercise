@@ -218,7 +218,7 @@ void CompressImage( u8 const* rgba, int width, int height, void* blocks, int fla
 
 void CompressImageRGB( u8 const* rgb, int width, int height, void* blocks, int flags );
 
-/*  For OpenCPN
+/*  For Komodo Exercise 2016
  *
  */
 void CompressImageRGBpow2_Flatten_Throttle( u8 const* rgb, int width, int height, void* blocks, int flags,

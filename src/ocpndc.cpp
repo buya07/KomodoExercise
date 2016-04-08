@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Layer to perform wxDC drawing using wxDC or opengl
  * Author:   Sean D'Epagnier
  *

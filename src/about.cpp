@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  About Dialog
  * Author:   David Register
  *
@@ -64,21 +64,21 @@ wxString OpenCPNVersion =
                                      VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH, VERSION_DATE);
     
 const wxString AboutText =
-    wxT("<br>OpenCPN<br>")
-    wxT("(c) 2000-2015 The OpenCPN Authors<br><br>");
+    wxT("<br>Komodo Exercise 2016<br>")
+    wxT("(c) 2000-2015 The Komodo Exercise 2016 Authors<br><br>");
 
 const wxString OpenCPNInfo =
     wxT("<br><br>")
-    wxT("OpenCPN is a Free Software project, built by sailors. ")
+    wxT("Komodo Exercise 2016 is a Free Software project, built by sailors. ")
     wxT("It is freely available to download and distribute ")
     wxT("without charge at opencpn.org.<br><br>")
-    wxT("If you use OpenCPN, please consider contributing ")
+    wxT("If you use Komodo Exercise 2016, please consider contributing ")
     wxT("or donating funds to the project.<br><br>")
     wxT("For more information, visit http://opencpn.org<br><br>");
 
 const wxString OpenCPNInfoAlt =
     wxT("<br><br>")
-    wxT("OpenCPN is a Free Software project, built by sailors.")
+    wxT("Komodo Exercise 2016 is a Free Software project, built by sailors.")
     wxT("The complete source code and many other resources ")
     wxT("are freely available for your download and use, ")
     wxT("subject to applicable License agreements.")
@@ -88,7 +88,7 @@ const wxString OpenCPNInfoAlt =
     
 const wxString AuthorText =
     wxT("   David S Register\n")
-    wxT("      OpenCPN Lead Developer\n\n")
+    wxT("      Komodo Exercise 2016 Lead Developer\n\n")
     wxT("    Pavel Kalian\n")
     wxT("      Packaging and PlugIn development\n\n")
     wxT("    Sean D'Epagnier\n")
@@ -118,21 +118,21 @@ const wxString AuthorText =
     wxT("    Anders Lund\n")
     wxT("      RouteManagerDialog\n\n")
     wxT("    Gordon Mau\n")
-    wxT("      OpenCPN Documentation\n\n")
+    wxT("      Komodo Exercise 2016 Documentation\n\n")
     wxT("    Tim Francis\n")
-    wxT("      OpenCPN Documentation\n\n")
+    wxT("      Komodo Exercise 2016 Documentation\n\n")
     wxT("    Mark A Sikes\n")
-    wxT("      OpenCPN CoDeveloper\n\n")
+    wxT("      Komodo Exercise 2016 CoDeveloper\n\n")
     wxT("    Thomas Haller\n")
     wxT("      GPX Import/Export Implementation\n\n")
     wxT("    Will Kamp\n")
     wxT("      Toolbar Icon design\n\n")
     wxT("    Richard Smith\n")
-    wxT("      OpenCPN CoDeveloper, MacOSX\n\n")
+    wxT("      Komodo Exercise 2016 CoDeveloper, MacOSX\n\n")
     wxT("    David Herring\n")
-    wxT("      OpenCPN CoDeveloper, MacOSX\n\n")
+    wxT("      Komodo Exercise 2016 CoDeveloper, MacOSX\n\n")
     wxT("    Philip Lange\n")
-    wxT("      OpenCPN Documentation\n\n")
+    wxT("      Komodo Exercise 2016 Documentation\n\n")
     wxT("    Ron Kuris\n")
     wxT("      wxWidgets Support\n\n")
     wxT("    Julian Smart, Robert Roebling et al\n")
@@ -270,7 +270,7 @@ void about::Populate( void )
         aboutText.Append( _T("<i>") );
 
 #ifdef __OCPN__ANDROID__    
-    aboutText.Append( AboutText + OpenCPNVersionAndroid  + OpenCPNInfoAlt );
+    aboutText.Append( AboutText + Komodo Exercise 2016VersionAndroid  + Komodo Exercise 2016InfoAlt );
 #else
     aboutText.Append( AboutText + OpenCPNVersion + OpenCPNInfo );
 #endif    

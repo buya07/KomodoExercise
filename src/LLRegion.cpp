@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Latitude and Longitude regions
  * Author:   Sean D'Epagnier
  *

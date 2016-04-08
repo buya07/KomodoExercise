@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * Project:  OpenCPN
+ * Project:  Komodo Exercise 2016
  * Purpose:  Chart Canvas
  * Author:   David Register
  *
@@ -5215,7 +5215,7 @@ bool ChartCanvas::MouseEventProcessObjects( wxMouseEvent& event )
                         int dlg_return;
 #ifndef __WXOSX__
                         dlg_return = OCPNMessageBox( this, _("Use nearby waypoint?"),
-                                                 _("OpenCPN Route Create"),
+                                                 _("Komodo Exercise 2016 Route Create"),
                                                    (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
 #else
                         dlg_return = wxID_YES;
@@ -5267,7 +5267,7 @@ bool ChartCanvas::MouseEventProcessObjects( wxMouseEvent& event )
                             
                             m_disable_edge_pan = true;  // This helps on OS X if MessageBox does not fully capture mouse
                             
-                            int answer = OCPNMessageBox( this, msg, _("OpenCPN Route Create"), wxYES_NO | wxNO_DEFAULT );
+                            int answer = OCPNMessageBox( this, msg, _("Komodo Exercise 2016 Route Create"), wxYES_NO | wxNO_DEFAULT );
                             
                             m_disable_edge_pan = false;
                             
@@ -5625,7 +5625,7 @@ bool ChartCanvas::MouseEventProcessObjects( wxMouseEvent& event )
                     int dlg_return;
                     #ifndef __WXOSX__
                     dlg_return = OCPNMessageBox( this, _("Use nearby waypoint?"),
-                                                 _("OpenCPN Route Create"),
+                                                 _("Komodo Exercise 2016 Route Create"),
                                                  (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
                                                  #else
                                                  dlg_return = wxID_YES;
@@ -5674,7 +5674,7 @@ bool ChartCanvas::MouseEventProcessObjects( wxMouseEvent& event )
                         << _("Would you like include the Great Circle routing points for this leg?");
                         
                         #ifndef __WXOSX__
-                        int answer = OCPNMessageBox( this, msg, _("OpenCPN Route Create"), wxYES_NO | wxNO_DEFAULT );
+                        int answer = OCPNMessageBox( this, msg, _("Komodo Exercise 2016 Route Create"), wxYES_NO | wxNO_DEFAULT );
                         #else
                         int answer = wxID_NO;
                         #endif
@@ -6887,7 +6887,7 @@ void ChartCanvas::MouseEvent( wxMouseEvent& event )
                     int dlg_return;
     #ifndef __WXOSX__
                     dlg_return = OCPNMessageBox( this, _("Use nearby waypoint?"),
-                                                    _("OpenCPN Route Create"),
+                                                    _("Komodo Exercise 2016 Route Create"),
                                                     (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
     #else
                     dlg_return = wxID_YES;
@@ -6938,7 +6938,7 @@ void ChartCanvas::MouseEvent( wxMouseEvent& event )
                                 
                             m_disable_edge_pan = true;  // This helps on OS X if MessageBox does not fully capture mouse
 
-                            int answer = OCPNMessageBox( this, msg, _("OpenCPN Route Create"), wxYES_NO | wxNO_DEFAULT );
+                            int answer = OCPNMessageBox( this, msg, _("Komodo Exercise 2016 Route Create"), wxYES_NO | wxNO_DEFAULT );
 
                             m_disable_edge_pan = false;
                             
@@ -7297,7 +7297,7 @@ void ChartCanvas::MouseEvent( wxMouseEvent& event )
                     int dlg_return;
                     #ifndef __WXOSX__
                     dlg_return = OCPNMessageBox( this, _("Use nearby waypoint?"),
-                                                _("OpenCPN Route Create"),
+                                                _("Komodo Exercise 2016 Route Create"),
                                                 (long) wxYES_NO | wxCANCEL | wxYES_DEFAULT );
                                                 #else
                                                 dlg_return = wxID_YES;
@@ -7346,7 +7346,7 @@ void ChartCanvas::MouseEvent( wxMouseEvent& event )
                         << _("Would you like include the Great Circle routing points for this leg?");
 
                         #ifndef __WXOSX__
-                        int answer = OCPNMessageBox( this, msg, _("OpenCPN Route Create"), wxYES_NO | wxNO_DEFAULT );
+                        int answer = OCPNMessageBox( this, msg, _("Komodo Exercise 2016 Route Create"), wxYES_NO | wxNO_DEFAULT );
                         #else
                         int answer = wxID_NO;
                         #endif
